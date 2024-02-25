@@ -1,0 +1,12 @@
+@media(max-width:600px) {
+    header{
+        height: 150px;
+        padding: 10px;
+    }
+   h1{
+    font-size: 2rem;
+   }
+   #new-input{
+    width: 200px;
+   }
+}

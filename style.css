@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100dvh;
+    width: 100%;
+    background: linear-gradient(to bottom right, #fdc639, #ff7c60);
+    overflow: auto;
+    margin-bottom: 50px;
+}
+header{
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+    text-align: center;
+    padding: 30px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px black;
+}
+h1{
+    font-size: 4rem;
+}
+#new-input{
+    margin-top: 20px;
+    height: 50px;
+    width: 500px;
+    padding: 20px;
+    font-size:1.5rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+#add-btn{
+    margin-left: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.285);
+    font-size: 1.5rem;
+    padding: 11px 15px;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 3px 3px 3px black;
+    transition: 0.2s;
+}
+#add-btn:active{
+    box-shadow: 1px 1px 1px black;
+}
+#new-ul{
+    overflow-y:auto ;
+    margin-bottom: 40px;
+}
+#new-ul li{
+    position: relative;
+    margin: 20px 10px;
+    font-size: 2rem;
+    transition: 0.3s;
+    padding:  10px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.326);
+    color: whitesmoke;
+}
+#new-ul li.checked{
+    color: red;
+    text-decoration: line-through;
+    background: #fff;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 16px 10px 16px;
+    background: gold;
+    border: none;
+    font-size: 2rem;
+    color: red;
+    transition: 0.3s;
+}
+.close:hover{
+    background: red;
+    color: gold;
+}
+#new-ul li.checked .close{
+    background-color: red;
+    color: white;
+ 
+}
